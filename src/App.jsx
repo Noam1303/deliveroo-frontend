@@ -12,6 +12,7 @@ function App() {
 
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [tabAchat, setTabAchat] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get("https://site--test-backend--7g4fljlbl5js.code.run/");
@@ -32,7 +33,7 @@ function App() {
           ) : (
             <>
             <Header data={data.restaurant}></Header>
-            <Content categories={data.categories}></Content>
+            <Content categories={data.categories} tabAchat={tabAchat} setTabAchat={setTabAchat}></Content>
             </>
           )}
     </nav>

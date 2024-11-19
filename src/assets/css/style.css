@@ -36,6 +36,10 @@ header {
     flex-direction: column;
 }
 
+.header-container {
+    width: 60%;
+}
+
 
 .restaurant-info {
     display: flex;
@@ -63,17 +67,184 @@ header {
 }
 
 .logo {
-    color: rgb(33, 235, 201);
+    color: rgb(15, 201, 170);
     height: 1vh;
     font-weight: bold;
     display: flex;
     align-items: center;
-    border-bottom: solid rgb(226, 224, 224) 1px;
+}
+
+.border-bottom {
+        border-bottom: solid rgb(226, 224, 224) 1px;
+}
+
+.main-container {
+    background-color: rgb(243, 243, 243);
+}
+
+.second-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
 }
 
 .container {
-    background-color: rgb(243, 243, 243);
+    width: 70%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
 }
+
+.panier {
+    margin-top: 55px;
+    background-color: white;
+    width: 30%;
+    min-height: 30vh;
+    border-radius: 8px;
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.achat-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.achat {
+    margin-top: 10px;
+    color: rgb(131, 131, 131);
+    font-size: 16px;
+    background-color: rgb(214, 213, 213);
+    border: solid transparent 0px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.achat-non-vide {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: rgb(15, 201, 170);
+    color: white;
+    border: solid transparent 0px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+}
+
+.panier-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+
+.commande-container {
+    min-height: 10vh;
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.commande-container::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.commande-container > p {
+    margin-top: 20%;
+    color: rgb(170, 169, 169);
+}
+
+.commande-panier {
+    color: rgb(66, 65, 65);
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.affichage-panier {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 10px;
+    width: 35%;
+}
+
+.panier-button {
+    margin: 0px 10px 0px 10px;
+    border-radius: 50px;
+    border: solid rgb(15, 201, 170) 2px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+}
+
+.panier-title {
+    padding: 10px;
+    width: 45%;
+}
+
+.panier-price {    
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.calcul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60%;
+    width: 90%;
+}
+
+.sous-total {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    border-top: solid rgb(196, 194, 194) 1px;
+}
+
+.frais {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    border-bottom: solid rgb(196, 194, 194) 1px;
+}
+
+.total {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .container-categories {
     display: flex;
@@ -89,11 +260,24 @@ header {
     margin-bottom: 40px;
     border-radius: 5px;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
-    width: 25vw;
-    height: 130px;
+    width: 18vw;
+    height: 160px;
     color: rgb(119, 118, 118);
+    border: solid transparent 0px;
 }
+
+.container-categories-content:hover {
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 14px 43px -10px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 14px 43px -10px rgba(0,0,0,0.23);
+    box-shadow: 0px 14px 43px -10px rgba(0,0,0,0.23);
+}
+
+
+
 
 .categories-text > p {
     margin-top: 10px;
