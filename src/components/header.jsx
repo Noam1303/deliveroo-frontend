@@ -3,11 +3,9 @@ const Header = (props) => {
     
     return(
         <header>
-            <div className="header-container">
                 <div className="logo" >
                     <img src="logo.png" alt="deliveroo logo" width="40px" /> Deliveroo
                 </div>
-            </div>
             <div className="border-bottom"/>
             <div>
                 <div className="restaurant-info">
